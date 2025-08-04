@@ -1,2 +1,5 @@
-# results-summarycomponent-main-Frontend-Mentor
-Repositorio para publicar desafio results-summary-component-main de frontend mentor
+# Frontend Mentor - Results summary component
+
+![Design preview for the Results summary component coding challenge](./preview.jpg)
+
+## Welcome! 👋

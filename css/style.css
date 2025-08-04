@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECF3FF;
+    
+}
+.contenido{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.contenido .resultados{
+    background: #6643FE;
+    background: linear-gradient(180deg, rgba(102, 67, 254, 1) 0%, rgba(49, 46, 227, 1) 50%);
+    color: #bfb8ff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.contenido .resultados .circuloResultado{
+    clip-path: circle(35% at 50% 50%);
+    background-color: #312ee3;
+    padding: 50px;
+
+}
+.contenido .resultados .circuloResultado .tituloResultado{
+    color: #fff;
+    font-size: 3.2rem;
+}
+.contenido .resumen{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+}
+.contenido .resumen .Reaction, .contenido .resumen .Memory, .contenido .resumen .Verbal, .contenido .resumen .Visual{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: #000;
+}
+.contenido .resumen .Reaction{
+    background-color: #FFF6F7;
+    color: #FF5555;
+}
+.contenido .resumen .Reaction span strong, .contenido .resumen .Memory span strong, .contenido .resumen .Verbal span strong, .contenido .resumen .Visual span strong{
+    color: #000;
+}
+.contenido .resumen .Reaction span em, .contenido .resumen .Memory span em, .contenido .resumen .Verbal span em, .contenido .resumen .Visual span em{
+    color: #a3a3a3;
+}
+.contenido .resumen .Memory{
+    background-color: #FFFBF3;
+    color: #FFB21E;
+}
+.contenido .resumen .Verbal{
+    background-color: #F0FEF9;
+    color: #00BB8F;
+}
+.contenido .resumen .Visual{
+    background-color: #F4F4FF;
+    color: #1125D6;
+}
+.contenido .resumen .continuar{
+    width: 100%;
+    background-color: #313C5B;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.contenido .resumen .continuar:hover{
+    background-color: #6643FE;
+    background: linear-gradient(180deg, rgba(102, 67, 254, 1) 0%, rgba(49, 46, 227, 1) 50%);
+}
+@media (max-width: 768px){
+    .contenido{
+        grid-template-columns: auto;
+    }
+}
